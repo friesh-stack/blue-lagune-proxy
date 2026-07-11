@@ -1,0 +1,11 @@
+{
+  // Konfiguration für blue-lagune-proxy — wird von Cloudflare beim Git-Deploy gelesen
+  "name": "blue-lagune-proxy",
+  "main": "worker.js",
+  "compatibility_date": "2026-03-10",
+
+  // Workers-AI-Binding: legt env.AI automatisch an (ersetzt den Dashboard-Dialog)
+  "ai": {
+    "binding": "AI"
+  }
+}
