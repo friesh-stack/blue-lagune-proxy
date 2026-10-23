@@ -43,7 +43,7 @@ export default {
       'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
       'Access-Control-Allow-Headers': '*',
     };
-    if (request.method === 'OPTIONS') return new Response(null, { headers: cors });
+    if (request.method === 'OPTIONS' && url.pathname.startsWith('/license-rs')) return new Response(null, { headers: cors });
 
     // ---------- Whisper: Audio -> Text ----------
     if (url.pathname === '/transcribe') {
